@@ -1,0 +1,18 @@
+[
+  {
+    "id": "unique-id-1",
+    "title": "Project name",
+    "oneLiner": "One sentence that describes the project.",
+    "problem": "What problem were you solving?",
+    "whatIBuilt": "What did you build? One or two sentences.",
+    "techStack": ["Next.js", "TypeScript", "Tailwind"],
+    "keyWins": [
+      "First measurable win or outcome.",
+      "Second win.",
+      "Third win."
+    ],
+    "githubUrl": "https://github.com/you/repo",
+    "demoUrl": "https://demo.example.com",
+    "category": "Full-stack"
+  }
+]
