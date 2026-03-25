@@ -125,6 +125,14 @@ export default function Home() {
                 {site.email}
               </a>
             </div>
+            <div className="rounded-[1.4rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.42)] p-4">
+              <p className="text-xs uppercase tracking-[0.24em] text-[color:var(--muted)]">
+                Quick profile
+              </p>
+              <p className="mt-2 text-sm leading-7 text-[color:var(--text)]">
+                {education.school}, class of 2027. AWS Certified Cloud Practitioner. Focused on software engineering internships and early-career roles.
+              </p>
+            </div>
           </div>
           <div className="flex flex-wrap gap-3">
             <a
