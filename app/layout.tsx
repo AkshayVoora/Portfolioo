@@ -2,20 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://yoursite.vercel.app"),
-  title: "Portfolio | Developer",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://akshay-voora.vercel.app"),
+  title: "Akshay Voora | Software Engineer",
   description:
-    "Personal portfolio. Building products that matter. Frontend, backend, and everything in between.",
+    "Portfolio of Akshay Voora, a software engineer building thoughtful products across web, systems, and AI.",
   openGraph: {
-    title: "Portfolio | Developer",
-    description: "Personal portfolio. Building products that matter.",
+    title: "Akshay Voora | Software Engineer",
+    description:
+      "Portfolio of Akshay Voora, a software engineer building thoughtful products across web, systems, and AI.",
     type: "website",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Portfolio" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Akshay Voora portfolio" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio | Developer",
-    description: "Personal portfolio. Building products that matter.",
+    title: "Akshay Voora | Software Engineer",
+    description:
+      "Portfolio of Akshay Voora, a software engineer building thoughtful products across web, systems, and AI.",
   },
 };
 
