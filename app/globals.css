@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
 }
 
 body {
@@ -33,6 +34,8 @@ body {
 
 a {
   color: inherit;
+  transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease,
+    transform 160ms ease;
 }
 
 button,
@@ -55,6 +58,13 @@ a {
 }
 
 @layer components {
+  #work,
+  #experience,
+  #skills,
+  #contact {
+    scroll-margin-top: 7rem;
+  }
+
   .page-shell {
     @apply mx-auto max-w-7xl px-5 pb-20 pt-5 sm:px-8 lg:px-10;
   }
@@ -169,5 +179,11 @@ a {
 @layer utilities {
   .balanced-text {
     text-wrap: balance;
+  }
+
+  .focus-outline {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+    --tw-ring-color: rgba(180, 83, 60, 0.42);
+    --tw-ring-offset-color: #fcf6ef;
   }
 }
