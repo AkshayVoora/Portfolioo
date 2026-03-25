@@ -23,6 +23,12 @@ export const spotlight = [
   "AI workflows grounded in real utility",
 ];
 
+export const impactHighlights = [
+  "Cut release time from 1 hour to under 10 minutes with Docker and GitHub Actions CI/CD.",
+  "Reduced manual work by 60% by automating data segmentation and sync pipelines for 500+ users.",
+  "Brought API response time under 100ms by moving long-running work into background job processing.",
+];
+
 export const education = {
   school: "Arizona State University",
   degree: "B.S. Computer Science",

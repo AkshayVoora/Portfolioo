@@ -7,6 +7,7 @@ import {
   certification,
   education,
   experience,
+  impactHighlights,
   metrics,
   principles,
   projects,
@@ -166,6 +167,28 @@ export default function Home() {
             >
               <span className="mb-6 block h-12 w-12 rounded-full bg-[rgba(180,83,60,0.12)]" />
               <p className="text-lg leading-8">{item}</p>
+            </article>
+          ))}
+        </div>
+      </motion.section>
+
+      <motion.section {...fadeUp} className="section">
+        <div className="section-heading split-heading">
+          <div>
+            <p className="eyebrow">Impact</p>
+            <h2 className="balanced-text">A few outcomes that capture how I like to contribute.</h2>
+          </div>
+          <p className="section-note">
+            I try to make improvement tangible: faster systems, better workflows, and cleaner product execution.
+          </p>
+        </div>
+        <div className="grid gap-4 md:grid-cols-3">
+          {impactHighlights.map((item) => (
+            <article
+              key={item}
+              className="rounded-[1.6rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.42)] p-5"
+            >
+              <p className="text-base leading-8 text-[color:var(--muted)]">{item}</p>
             </article>
           ))}
         </div>
