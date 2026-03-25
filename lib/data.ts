@@ -1,135 +1,171 @@
 export const site = {
-  name: "Your Name",
-  tagline: "Building products that matter.",
-  location: "San Francisco, CA",
-  email: "hello@example.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  github: "https://github.com/yourusername",
-  resume: "",
+  name: "Akshay Voora",
+  shortName: "AV",
+  title: "Software engineer building fast, thoughtful products across web, data, and AI.",
+  intro:
+    "I’m a Computer Science student at Arizona State University focused on product-minded engineering. I care about interfaces that feel sharp, systems that scale cleanly, and shipping work that is both technically solid and genuinely useful.",
+  location: "Tempe, Arizona",
+  email: "akshayvoora06@gmail.com",
+  phone: "(623) 217-7597",
+  linkedin: "https://linkedin.com/in/avoora",
+  github: "https://github.com/AkshayVoora",
+  resume: "/Akshay_Voora_Resume.pdf",
+  availability: "Seeking software engineering internships and new-grad opportunities",
 };
 
-export type ProjectCategory = "Full-stack" | "AI" | "Frontend" | "Backend";
+export const metrics = [
+  { label: "GPA", value: "4.0" },
+  { label: "Internships", value: "3" },
+  { label: "Focus areas", value: "Web + AI" },
+];
 
-export interface Project {
-  id: string;
-  title: string;
-  oneLiner: string;
-  problem: string;
-  whatIBuilt: string;
-  techStack: string[];
-  keyWins: string[];
-  githubUrl?: string;
-  demoUrl?: string;
-  category: ProjectCategory;
-}
+export const spotlight = [
+  "Full-stack product engineering",
+  "Scalable systems and backend reliability",
+  "AI workflows grounded in real utility",
+];
 
-export const projects: Project[] = [
+export const education = {
+  school: "Arizona State University",
+  degree: "B.S. Computer Science",
+  graduation: "May 2027",
+  location: "Tempe, AZ",
+  gpa: "4.0 / 4.0",
+};
+
+export const skillGroups = [
   {
-    id: "1",
-    title: "Taskflow",
-    oneLiner: "Team task management with real-time sync.",
-    problem: "Teams needed a simple way to track work without enterprise bloat.",
-    whatIBuilt: "A real-time collaborative task board with drag-and-drop and inline comments.",
-    techStack: ["Next.js", "PostgreSQL", "Supabase", "Tailwind"],
-    keyWins: ["Shipped in 6 weeks", "50+ active teams in first month", "Sub-100ms sync latency"],
-    githubUrl: "https://github.com/example/taskflow",
-    demoUrl: "https://taskflow.demo.com",
-    category: "Full-stack",
+    title: "Languages",
+    items: ["TypeScript", "JavaScript", "Python", "Java", "SQL"],
   },
   {
-    id: "2",
-    title: "Doc Summarizer",
-    oneLiner: "Summarize long docs with one click.",
-    problem: "Legal and research teams spent hours skimming long PDFs.",
-    whatIBuilt: "An AI pipeline that chunks documents, summarizes sections, and outputs structured summaries.",
-    techStack: ["Python", "LangChain", "OpenAI", "FastAPI"],
-    keyWins: ["80% time saved on first read", "Handles 50+ page docs", "Structured output for downstream tools"],
-    githubUrl: "https://github.com/example/doc-summarizer",
-    demoUrl: "https://doc-summarizer.demo.com",
-    category: "AI",
+    title: "Frameworks & Tech",
+    items: [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "MongoDB",
+      "Prisma",
+      "LangChain",
+      "Pinecone",
+      "REST APIs",
+    ],
   },
   {
-    id: "3",
-    title: "Design System",
-    oneLiner: "Component library and design tokens.",
-    problem: "Product and eng were out of sync on components and spacing.",
-    whatIBuilt: "A React component library with Storybook, design tokens, and accessibility docs.",
-    techStack: ["React", "TypeScript", "Storybook", "Tailwind"],
-    keyWins: ["Single source of truth", "WCAG 2.1 AA", "Adopted across 4 products"],
-    githubUrl: "https://github.com/example/design-system",
-    category: "Frontend",
-  },
-  {
-    id: "4",
-    title: "API Gateway",
-    oneLiner: "Rate limiting and auth for internal APIs.",
-    problem: "Internal services had no unified way to enforce limits and API keys.",
-    whatIBuilt: "A lightweight gateway with configurable rate limits, API key validation, and request logging.",
-    techStack: ["Go", "Redis", "PostgreSQL"],
-    keyWins: ["P99 latency under 5ms", "Zero-downtime config reload", "Cut abuse by 90%"],
-    githubUrl: "https://github.com/example/api-gateway",
-    category: "Backend",
-  },
-  {
-    id: "5",
-    title: "Analytics Dashboard",
-    oneLiner: "Internal metrics and alerts.",
-    problem: "Stakeholders had to ask eng for every metric.",
-    whatIBuilt: "A read-only dashboard that pulls from our data warehouse with saved views and Slack alerts.",
-    techStack: ["Next.js", "dbt", "BigQuery", "Tailwind"],
-    keyWins: ["Self-serve for 20+ teams", "Alerts reduced on-call pages", "Refreshes every 15 min"],
-    githubUrl: "https://github.com/example/analytics-dashboard",
-    demoUrl: "https://analytics.demo.com",
-    category: "Full-stack",
+    title: "Cloud & Tools",
+    items: [
+      "Docker",
+      "Kubernetes",
+      "Cloudflare Workers",
+      "AWS",
+      "GitHub Actions",
+      "CI/CD",
+      "Postman",
+    ],
   },
 ];
 
+export const certification = "AWS Certified Cloud Practitioner (CLF-02)";
+
 export interface ExperienceItem {
-  id: string;
-  role: string;
   company: string;
+  role: string;
   period: string;
+  location: string;
   bullets: string[];
 }
 
 export const experience: ExperienceItem[] = [
   {
-    id: "1",
-    role: "Senior Engineer",
-    company: "Tech Co",
-    period: "2022 – Present",
+    company: "Food Forest AI",
+    role: "Software Engineering Intern",
+    period: "Jun 2025 - Aug 2025",
+    location: "Philadelphia, PA",
     bullets: [
-      "Led migration of core API to Go; improved P99 latency by 40%.",
-      "Shipped real-time collaboration features used by 10k+ daily users.",
-      "Mentored 3 engineers; established front-end review standards.",
+      "Built automated data pipelines using Node.js and n8n to segment and sync 500+ users to Firestore, cutting manual work by 60%.",
+      "Built internal dashboards with Retool and custom SQL/JavaScript queries so 10+ team members could access product metrics directly, cutting query time from 30 minutes to under 5 minutes.",
+      "Dockerized backend services and set up GitHub Actions CI/CD to deploy on AWS EC2, reducing release time from 1 hour to under 10 minutes and eliminating manual deployments.",
     ],
   },
   {
-    id: "2",
-    role: "Software Engineer",
-    company: "Startup Inc",
-    period: "2020 – 2022",
+    company: "Blue Springs",
+    role: "Software Engineering Intern",
+    period: "May 2024 - Jul 2024",
+    location: "Hyderabad, India",
     bullets: [
-      "Built and maintained customer-facing dashboard and internal tools.",
-      "Introduced E2E tests; reduced production bugs by 30%.",
-      "Collaborated with design on a new design system rollout.",
+      "Rebuilt key user-facing pages in React and fixed accessibility issues identified through SiteImprove audits, improving accessibility scores by 45% and reducing page load time by 30%.",
+      "Optimized frontend performance and SEO by restructuring components, lazy loading assets, and improving metadata, increasing organic traffic and user engagement by about 25%.",
     ],
   },
   {
-    id: "3",
-    role: "Junior Developer",
-    company: "Agency Ltd",
-    period: "2018 – 2020",
+    company: "CareerEra",
+    role: "Software Engineering Intern",
+    period: "Jan 2023 - Mar 2023",
+    location: "Hyderabad, India",
     bullets: [
-      "Developed client websites and small web apps in React and Node.",
-      "Learned CI/CD and deployment practices on AWS.",
+      "Built reusable React components with Tailwind CSS to standardize the UI, reducing duplicate code and lowering UI-related bugs and rework.",
+      "Developed backend APIs with Next.js and PostgreSQL and optimized slow queries by adding indexes, improving API response times and reliability.",
     ],
   },
 ];
 
-export const skillsByGroup = {
-  Frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  Backend: ["Node.js", "Go", "Python", "PostgreSQL", "Redis"],
-  DevOps: ["Docker", "AWS", "Vercel", "GitHub Actions"],
-  AI: ["LangChain", "OpenAI API", "RAG", "Structured outputs"],
-};
+export interface Project {
+  title: string;
+  period: string;
+  stack: string[];
+  summary: string;
+  bullets: string[];
+}
+
+export const projects: Project[] = [
+  {
+    title: "QueueFlow",
+    period: "Jan 2026",
+    stack: ["TypeScript", "Node.js", "Redis", "PostgreSQL", "Docker"],
+    summary: "An asynchronous job processing system designed for reliability, scale, and low latency.",
+    bullets: [
+      "Reduced API response time to under 100ms by enqueueing long-running tasks in Redis with BullMQ and offloading execution to background workers.",
+      "Implemented PostgreSQL job state tracking and exponential backoff retries with a maximum of 5 attempts, achieving a 99.9% success rate under 20% simulated failure conditions.",
+      "Processed 1,000 jobs with parallel worker containers and used Docker Compose to manage multi-container deployment and horizontal scale.",
+    ],
+  },
+  {
+    title: "DealHawk AI",
+    period: "Nov 2025",
+    stack: ["Python", "LLaMA-3", "GPT-4", "Pinecone"],
+    summary: "An AI pricing intelligence system for surfacing product listing anomalies in real time.",
+    bullets: [
+      "Fine-tuned LLaMA-3 using QLoRA on 10k+ historical product listings and built a Pinecone-backed RAG pipeline, improving price prediction accuracy by 20 to 30% while outperforming GPT-4.",
+      "Built a Python service to scrape and embed live e-commerce data, process 1k+ searches, and trigger real-time alerts for price anomalies.",
+    ],
+  },
+  {
+    title: "Medium",
+    period: "Oct 2025",
+    stack: ["TypeScript", "Cloudflare Workers", "PostgreSQL", "React", "Prisma"],
+    summary: "A full-stack blogging platform optimized for edge delivery and performance.",
+    bullets: [
+      "Built the platform using TypeScript and React and optimized performance with code-splitting, lazy loading, and dynamic routing, reducing page load times by 20%.",
+      "Designed and deployed a serverless backend on Cloudflare Workers with PostgreSQL and Prisma, cutting API latency by 30% and enabling low-latency global delivery.",
+    ],
+  },
+];
+
+export const principles = [
+  {
+    title: "Build for usefulness",
+    description:
+      "I’m most interested in software that removes friction, saves time, or makes a hard workflow feel obvious.",
+  },
+  {
+    title: "Move across the stack",
+    description:
+      "I’m comfortable switching between UI polish, backend systems, data flow, and deployment because product quality depends on all of them.",
+  },
+  {
+    title: "Measure the outcome",
+    description:
+      "I like work with clear impact, whether that’s latency, reliability, accessibility, automation, or team speed.",
+  },
+];
