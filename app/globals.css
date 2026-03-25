@@ -88,6 +88,16 @@ a {
     box-shadow: var(--shadow);
   }
 
+  .hero-card {
+    @apply relative overflow-hidden;
+  }
+
+  .hero-orb {
+    @apply absolute rounded-full blur-3xl;
+    background: rgba(180, 83, 60, 0.16);
+    pointer-events: none;
+  }
+
   .eyebrow {
     @apply text-xs font-semibold uppercase tracking-[0.32em];
     color: var(--accent-deep);

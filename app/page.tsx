@@ -70,8 +70,10 @@ export default function Home() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="section overflow-hidden"
+          className="section hero-card"
         >
+          <span className="hero-orb -right-16 top-12 h-44 w-44" aria-hidden />
+          <span className="hero-orb left-12 top-48 h-28 w-28 opacity-60" aria-hidden />
           <p className="eyebrow">Portfolio / 2026</p>
           <h1 className="balanced-text mt-5 max-w-4xl text-5xl leading-none sm:text-6xl lg:text-[5.8rem]">
             Building products that feel intentional from the first interaction.
