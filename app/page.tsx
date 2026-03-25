@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <main className="page-shell">
       <header className="floating-nav">
-        <a href="#top" className="flex items-center gap-3">
+        <a href="#top" className="focus-outline flex items-center gap-3 rounded-full">
           <span className="brand-mark">{site.shortName}</span>
           <div className="leading-tight">
             <p className="text-sm font-semibold">{site.name}</p>
@@ -46,7 +46,7 @@ export default function Home() {
         </a>
         <nav className="nav-links" aria-label="Main navigation">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href}>
+            <a key={item.href} href={item.href} className="focus-outline rounded-full px-1 py-1">
               {item.label}
             </a>
           ))}
@@ -58,7 +58,7 @@ export default function Home() {
           <a
             key={item.href}
             href={item.href}
-            className="whitespace-nowrap rounded-full border border-[color:var(--line)] bg-[rgba(255,248,241,0.8)] px-4 py-2"
+            className="focus-outline whitespace-nowrap rounded-full border border-[color:var(--line)] bg-[rgba(255,248,241,0.8)] px-4 py-2"
           >
             {item.label}
           </a>
@@ -82,10 +82,10 @@ export default function Home() {
             {site.intro}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="button-primary" href="#work">
+            <a className="button-primary focus-outline" href="#work">
               View selected projects
             </a>
-            <a className="button-secondary" href="#contact">
+            <a className="button-secondary focus-outline" href="#contact">
               Get in touch
             </a>
           </div>
@@ -120,16 +120,16 @@ export default function Home() {
               <p className="text-xs uppercase tracking-[0.24em] text-[color:var(--muted)]">
                 Reach me
               </p>
-              <a className="mt-2 block text-lg hover:text-[color:var(--accent)]" href={`mailto:${site.email}`}>
+              <a className="focus-outline mt-2 block rounded-md text-lg hover:text-[color:var(--accent)]" href={`mailto:${site.email}`}>
                 {site.email}
               </a>
             </div>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a className="button-secondary" href={site.github} target="_blank" rel="noreferrer">
+            <a className="button-secondary focus-outline" href={site.github} target="_blank" rel="noreferrer">
               GitHub
             </a>
-            <a className="button-secondary" href={site.linkedin} target="_blank" rel="noreferrer">
+            <a className="button-secondary focus-outline" href={site.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
           </div>
@@ -335,13 +335,13 @@ export default function Home() {
             </p>
           </div>
           <div className="space-y-3">
-            <a className="button-primary w-full" href={`mailto:${site.email}`}>
+            <a className="button-primary focus-outline w-full" href={`mailto:${site.email}`}>
               {site.email}
             </a>
-            <a className="button-secondary w-full" href={site.linkedin} target="_blank" rel="noreferrer">
+            <a className="button-secondary focus-outline w-full" href={site.linkedin} target="_blank" rel="noreferrer">
               Connect on LinkedIn
             </a>
-            <a className="button-secondary w-full" href={site.github} target="_blank" rel="noreferrer">
+            <a className="button-secondary focus-outline w-full" href={site.github} target="_blank" rel="noreferrer">
               Browse GitHub
             </a>
           </div>
@@ -352,13 +352,15 @@ export default function Home() {
         <div className="flex flex-col gap-3 border-t border-[color:var(--line)] pt-5 sm:flex-row sm:items-center sm:justify-between">
           <p>{site.name} · {education.school} · Class of 2027</p>
           <div className="flex flex-wrap gap-4">
-            <a href={site.github} target="_blank" rel="noreferrer">
+            <a className="focus-outline rounded-md" href={site.github} target="_blank" rel="noreferrer">
               GitHub
             </a>
-            <a href={site.linkedin} target="_blank" rel="noreferrer">
+            <a className="focus-outline rounded-md" href={site.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
-            <a href="#top">Back to top</a>
+            <a className="focus-outline rounded-md" href="#top">
+              Back to top
+            </a>
           </div>
         </div>
       </footer>
