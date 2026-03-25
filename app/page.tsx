@@ -53,6 +53,18 @@ export default function Home() {
         </nav>
       </header>
 
+      <div className="mb-6 flex gap-2 overflow-x-auto px-1 pb-1 text-sm sm:hidden">
+        {navItems.map((item) => (
+          <a
+            key={item.href}
+            href={item.href}
+            className="whitespace-nowrap rounded-full border border-[color:var(--line)] bg-[rgba(255,248,241,0.8)] px-4 py-2"
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+
       <section id="top" className="grid gap-6 lg:grid-cols-[1.45fr_0.85fr]">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
