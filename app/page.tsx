@@ -162,7 +162,7 @@ export default function Home() {
           {spotlight.map((item) => (
             <article
               key={item}
-              className="rounded-[1.6rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.44)] p-5"
+              className="rounded-[1.6rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.44)] p-5 transition duration-200 hover:-translate-y-1"
             >
               <span className="mb-6 block h-12 w-12 rounded-full bg-[rgba(180,83,60,0.12)]" />
               <p className="text-lg leading-8">{item}</p>
@@ -185,7 +185,7 @@ export default function Home() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="grid gap-6 rounded-[1.8rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.48)] p-6 lg:grid-cols-[0.8fr_1.2fr]"
+              className="grid gap-6 rounded-[1.8rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.48)] p-6 transition duration-200 hover:-translate-y-1 lg:grid-cols-[0.8fr_1.2fr]"
             >
               <div>
                 <p className="text-sm uppercase tracking-[0.24em] text-[color:var(--muted)]">
@@ -228,7 +228,7 @@ export default function Home() {
           {experience.map((item) => (
             <article
               key={`${item.company}-${item.period}`}
-              className="rounded-[1.8rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.46)] p-6"
+              className="rounded-[1.8rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.46)] p-6 transition duration-200 hover:-translate-y-1"
             >
               <div className="flex flex-col gap-2 border-b border-[color:var(--line)] pb-5 sm:flex-row sm:items-end sm:justify-between">
                 <div>
@@ -294,7 +294,7 @@ export default function Home() {
             {skillGroups.map((group) => (
               <article
                 key={group.title}
-                className="rounded-[1.4rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.42)] p-5"
+                className="rounded-[1.4rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.42)] p-5 transition duration-200 hover:-translate-y-1"
               >
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)]">
                   {group.title}
@@ -324,7 +324,7 @@ export default function Home() {
           {principles.map((principle) => (
             <article
               key={principle.title}
-              className="rounded-[1.6rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.44)] p-5"
+              className="rounded-[1.6rem] border border-[color:var(--line)] bg-[rgba(255,255,255,0.44)] p-5 transition duration-200 hover:-translate-y-1"
             >
               <h3 className="text-2xl">{principle.title}</h3>
               <p className="mt-4 text-base leading-8 text-[color:var(--muted)]">
