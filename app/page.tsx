@@ -347,6 +347,21 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+
+      <footer className="px-2 pb-8 pt-6 text-sm text-[color:var(--muted)]">
+        <div className="flex flex-col gap-3 border-t border-[color:var(--line)] pt-5 sm:flex-row sm:items-center sm:justify-between">
+          <p>{site.name} · {education.school} · Class of 2027</p>
+          <div className="flex flex-wrap gap-4">
+            <a href={site.github} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a href={site.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a href="#top">Back to top</a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
