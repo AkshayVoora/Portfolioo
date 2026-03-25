@@ -1,6 +1,6 @@
-# Portfolio
+# Akshay Voora Portfolio
 
-A minimal, professional personal portfolio built with Next.js (App Router), TypeScript, Tailwind CSS, and Framer Motion.
+A custom one-page portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
 ## Run locally
 
@@ -9,45 +9,38 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open `http://localhost:3000`.
 
-## Customize content
+## Where to edit content
 
-1. **Site info and socials**  
-   Edit `lib/data.ts`: `site` (name, tagline, email, LinkedIn, GitHub, resume).
+Most portfolio content lives in [lib/data.ts](/Users/akshay/Desktop/Portfolio/lib/data.ts).
 
-2. **Projects**  
-   Edit `lib/data.ts`: `projects` array. Or paste your data using the structure in `content/projects-template.json`. Categories: `Full-stack`, `AI`, `Frontend`, `Backend`.
+- `site`: name, intro, contact links, availability
+- `metrics`: hero stats
+- `education`: school details
+- `skillGroups`: languages, frameworks, tooling
+- `experience`: internships and bullet points
+- `projects`: featured technical work
+- `principles`: closing philosophy cards
 
-3. **Experience**  
-   Edit `lib/data.ts`: `experience` array.
+## Privacy notes
 
-4. **Skills**  
-   Edit `lib/data.ts`: `skillsByGroup` (Frontend, Backend, DevOps, AI).
+- The portfolio currently does not publish your phone number.
+- The portfolio currently does not publish your resume PDF.
+- Contact is routed through email, GitHub, and LinkedIn only.
 
-## Features
+## Main files
 
-- Sticky navbar with active section highlight
-- Project filter chips (All, Full-stack, AI, Frontend, Backend)
-- Project detail modal (problem, what you built, tech stack, key wins, GitHub/demo links)
-- Quick jump: **⌘K** (Mac) or **Ctrl+K** (Windows/Linux)
-- Scroll indicator on hero
-- Analytics placeholder in `lib/analytics.ts` (wire to your provider)
-- SEO: meta tags and Open Graph (optional: add `public/og.png` 1200×630 for social previews)
+- [app/page.tsx](/Users/akshay/Desktop/Portfolio/app/page.tsx): page structure and section layout
+- [app/globals.css](/Users/akshay/Desktop/Portfolio/app/globals.css): visual system and reusable styles
+- [app/layout.tsx](/Users/akshay/Desktop/Portfolio/app/layout.tsx): metadata and document shell
 
-## Deploy to Vercel
+## Deploy
 
-- [ ] Push your repo to GitHub (or GitLab/Bitbucket).
-- [ ] Go to [vercel.com](https://vercel.com) and sign in.
-- [ ] Click **Add New** → **Project** and import your repo.
-- [ ] Leave **Framework Preset** as Next.js and **Root Directory** as `.`
-- [ ] Click **Deploy**. Vercel will run `npm run build` and deploy.
-- [ ] (Optional) Add a custom domain under **Settings** → **Domains**.
-- [ ] (Optional) Add `og.png` to `public/` and redeploy for social previews.
+This is a standard Next.js app, so Vercel deployment is straightforward:
 
-## Tech
+```bash
+npm run build
+```
 
-- Next.js 15 (App Router)
-- TypeScript
-- Tailwind CSS
-- Framer Motion
+Then connect the repo to Vercel and deploy.
