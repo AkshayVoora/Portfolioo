@@ -126,10 +126,22 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a className="button-secondary focus-outline" href={site.github} target="_blank" rel="noreferrer">
+            <a
+              className="button-secondary focus-outline"
+              href={site.github}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Akshay Voora GitHub profile"
+            >
               GitHub
             </a>
-            <a className="button-secondary focus-outline" href={site.linkedin} target="_blank" rel="noreferrer">
+            <a
+              className="button-secondary focus-outline"
+              href={site.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Akshay Voora LinkedIn profile"
+            >
               LinkedIn
             </a>
           </div>
@@ -338,10 +350,22 @@ export default function Home() {
             <a className="button-primary focus-outline w-full" href={`mailto:${site.email}`}>
               {site.email}
             </a>
-            <a className="button-secondary focus-outline w-full" href={site.linkedin} target="_blank" rel="noreferrer">
+            <a
+              className="button-secondary focus-outline w-full"
+              href={site.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Connect with Akshay Voora on LinkedIn"
+            >
               Connect on LinkedIn
             </a>
-            <a className="button-secondary focus-outline w-full" href={site.github} target="_blank" rel="noreferrer">
+            <a
+              className="button-secondary focus-outline w-full"
+              href={site.github}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Browse Akshay Voora GitHub projects"
+            >
               Browse GitHub
             </a>
           </div>
@@ -352,10 +376,22 @@ export default function Home() {
         <div className="flex flex-col gap-3 border-t border-[color:var(--line)] pt-5 sm:flex-row sm:items-center sm:justify-between">
           <p>{site.name} · {education.school} · Class of 2027</p>
           <div className="flex flex-wrap gap-4">
-            <a className="focus-outline rounded-md" href={site.github} target="_blank" rel="noreferrer">
+            <a
+              className="focus-outline rounded-md"
+              href={site.github}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Akshay Voora GitHub profile"
+            >
               GitHub
             </a>
-            <a className="focus-outline rounded-md" href={site.linkedin} target="_blank" rel="noreferrer">
+            <a
+              className="focus-outline rounded-md"
+              href={site.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Akshay Voora LinkedIn profile"
+            >
               LinkedIn
             </a>
             <a className="focus-outline rounded-md" href="#top">
