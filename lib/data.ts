@@ -6,10 +6,8 @@ export const site = {
     "I’m a Computer Science student at Arizona State University focused on product-minded engineering. I care about interfaces that feel sharp, systems that scale cleanly, and shipping work that is both technically solid and genuinely useful.",
   location: "Tempe, Arizona",
   email: "akshayvoora06@gmail.com",
-  phone: "(623) 217-7597",
   linkedin: "https://linkedin.com/in/avoora",
   github: "https://github.com/AkshayVoora",
-  resume: "/Akshay_Voora_Resume.pdf",
   availability: "Seeking software engineering internships and new-grad opportunities",
 };
 

@@ -71,8 +71,8 @@ export default function Home() {
             <a className="button-primary" href="#work">
               View selected projects
             </a>
-            <a className="button-secondary" href={site.resume} target="_blank" rel="noreferrer">
-              Open resume
+            <a className="button-secondary" href="#contact">
+              Get in touch
             </a>
           </div>
           <div className="mt-12 grid gap-4 border-t border-[color:var(--line)] pt-6 sm:grid-cols-3">
@@ -108,9 +108,6 @@ export default function Home() {
               </p>
               <a className="mt-2 block text-lg hover:text-[color:var(--accent)]" href={`mailto:${site.email}`}>
                 {site.email}
-              </a>
-              <a className="mt-1 block text-sm text-[color:var(--muted)]" href={`tel:${site.phone.replace(/[^\d+]/g, "")}`}>
-                {site.phone}
               </a>
             </div>
           </div>
